@@ -1,0 +1,272 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  height: 8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.nav__logo img {
+  height: 7em;
+  margin: 1em;
+}
+
+.nav__link {
+  display: inline;
+}
+
+/*CHANGE HOVER */
+.nav__link a {
+  box-sizing: border-box;
+  color: #292929;
+  padding: .625em;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav__link a:hover, .nav__link a:focus  {
+  background-color: #292929;
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 40em) {
+   .nav {
+     flex-direction: column;
+     height: 12em;
+  }
+  .nav__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: .8em;
+  }
+}
+
+.home {
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.home__header {
+  color: white;
+  text-align: center;
+  background-color: #93E5E3;
+  margin: 0 auto;
+  width: 80%;
+  padding: 5%;
+  border-radius: 1em;
+  transition: all 1s ease-in-out;
+}
+
+.home__heading {
+  font-weight: lighter;
+}
+
+.home__blockquote {
+  padding-top: 1em;
+  font-size: 1.4em;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.home__header:hover{
+  transform: scale(1.1);
+}
+
+.home__header:focus{
+  transform: scale(1.1);
+}
+
+.about {
+  background-color: rgba(131, 152, 173, 0.7);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.about__image {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+}
+
+.about__bio {
+  width: 50%;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: right;
+}
+
+@media screen and (max-width: 40em) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about__bio {
+    text-align: center;
+    width: 90%;
+  }
+}
+
+.classes {
+  min-height: 100vh;
+}
+
+.classes__text {
+  /*display: inline-flex;
+  flex-wrap: wrap;*/
+}
+
+.classes__listing {
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ffffff;
+  background-color: rgb(59, 63, 69);
+  min-height: 100vh;
+}
+
+.contact__heading {
+  font-family: 'Anton', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 2em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 85%;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.form__label--name, .form__label--email, .form__label--message {
+  font-size: 1.2em;
+}
+
+.form__input--name, .form__input--email, .form__input--message {
+  font-size: 1.2em;
+  border: transparent;
+  outline: none;
+  transition: all .2s ease-in-out;
+}
+
+
+
+.form__input--name:focus, .form__input--email:focus, .form__input--message:focus {
+  box-shadow: 0 0 0.7em 0.7em rgba(34, 128, 191, 0.7);
+  border-color: rgba(34, 128, 191);
+}
+
+.contact input {
+  line-height: 1em;
+  border-radius: .25em;
+}
+
+.form__input--message {
+  height: 5em;
+  border-radius: .25em;
+  resize: none;
+}
+
+@media screen and (min-width: 48em) {
+  .form__input--message {
+    height: 10em;
+  }
+}
+
+.form__btn {
+  height: 2em;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: .25em;
+  color: #fff;
+  background-color: #2280bf;
+  border-style: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.form__btn:focus {
+  box-shadow: 0 0 0.7em 0.7em rgba(34, 128, 191, 0.5);
+  border: transparent;
+  outline: none;
+}
+
+@media screen and (min-width: 48em) {
+  .form__btn:focus  {
+    box-shadow: 0 0 1em 1em rgba(34, 128, 191, 0.5);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  align-items: center;
+  background-color: rgba(27, 27, 31, 0.9);
+  color: #ccc;
+  min-height: 6em;
+  width: 100%;
+}
+
+.page-footer__text {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+/*BACK BUTTON */
+.back-to-top-btn {
+  position: fixed;
+	display: block;
+  opacity: 0.6;
+	width: 50px;
+	height: 50px;
+	text-indent: -9999px;
+	z-index: 999;
+	right: 5px;
+	bottom: 5px;
+  background-color: #bfbfbf;
+  background-image: url('../../../images/graphics/up-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+	border-radius: 30px;
+  transition: opacity 1s ease, background 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.back-to-top-btn:hover {
+	background-color: #707070;
+}
+
+@media screen and (min-width: 48em) {
+  .back-to-top-btn  {
+    right: 20px;
+    bottom: 8px;
+  }
+}
