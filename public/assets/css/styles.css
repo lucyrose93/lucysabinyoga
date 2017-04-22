@@ -106,7 +106,7 @@ a:hover {
 
 @media screen and (max-width: 70em) {
   .home {
-    min-height: 80vh;
+    min-height: 90vh;
   }
   .home__header {
     margin: 2em;
@@ -221,6 +221,12 @@ a:hover {
   font-size: 1.5em;
   line-height: 1.5em;
   margin-top: 1em;
+}
+
+@media screen and (max-width: 70em) {
+  .contact__para {
+    margin: 0 1em; 
+  }
 }
 
 .form {
