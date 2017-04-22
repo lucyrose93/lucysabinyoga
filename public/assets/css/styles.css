@@ -4,9 +4,21 @@ html {
 
 * {
   box-sizing: inherit;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+/*remove default link styling */
+a {
+    color: #93E5E3;
+    text-decoration: none;
+}
+
+a:hover {
+     color: #C7D528;
+     text-decoration:none;
+     cursor:pointer;
 }
 
 .nav {
@@ -27,20 +39,23 @@ html {
   display: inline;
 }
 
+.nav__list {
+  margin-right: 1em;
+}
+
 /*CHANGE HOVER */
 .nav__link a {
   box-sizing: border-box;
   color: #292929;
   padding: .625em;
   text-decoration: none;
+  font-family: 'Special Elite', cursive;
   font-size: 1.5em;
   transition: all 0.2s ease-in-out;
 }
 
 .nav__link a:hover, .nav__link a:focus  {
-  background-color: #292929;
-  color: #fff;
-  text-decoration: underline;
+  color: #93E5E3;
 }
 
 @media screen and (max-width: 40em) {
@@ -52,6 +67,9 @@ html {
     display: inline-flex;
     align-items: center;
     font-size: .8em;
+  }
+  .nav__list {
+    margin: 0;
   }
 }
 
@@ -65,25 +83,21 @@ html {
 }
 
 .home__header {
-  color: white;
+  color: #ffffff;
+  background-color: rgba(100,100,100,0.5);
   text-align: center;
-  background-color: #93E5E3;
   margin: 0 auto;
-  width: 80%;
-  padding: 5%;
-  border-radius: 1em;
+  padding: 1em;
+  border-radius: .3em;
   transition: all 1s ease-in-out;
+  border: .2em solid #C7D528;
+
 }
 
 .home__heading {
+  font-size: 2.5em;
   font-weight: lighter;
-}
-
-.home__blockquote {
-  padding-top: 1em;
-  font-size: 1.4em;
-  font-weight: lighter;
-  font-style: italic;
+  font-family: 'Special Elite', cursive;
 }
 
 .home__header:hover{
@@ -94,49 +108,98 @@ html {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 40em) {
+  .home {
+    min-height: 80vh;
+  }
+  .home__header {
+    margin: 2em;
+  }
+  .home__heading {
+    font-size: 1.5em;
+  }
+}
+
 .about {
-  background-color: rgba(131, 152, 173, 0.7);
+  background-color: rgba(27, 27, 31, 0.9);
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   min-height: 100vh;
+  padding: 0em 4em;
+}
+
+.about__heading {
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #C7D528;
+  font-family: 'Special Elite', cursive;
 }
 
 .about__image {
-  margin: 0 auto;
+  margin: 1em auto;
   border-radius: 50%;
   width: 50%;
   height: auto;
+  border: .2em solid #93E5E3;
 }
 
 .about__bio {
-  width: 50%;
-  font-size: 1em;
-  line-height: 1em;
-  text-align: right;
+  margin: 3em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 @media screen and (max-width: 40em) {
   .about {
     flex-direction: column;
-    text-align: center;
+    padding: 2em 2em;
   }
   .about__bio {
-    text-align: center;
-    width: 90%;
+    margin: 1em 0em;
+    text-align: left;
   }
 }
 
 .classes {
   min-height: 100vh;
+  padding-top: 3em;
 }
 
 .classes__text {
-  /*display: inline-flex;
-  flex-wrap: wrap;*/
+  margin: 1.5em;
+  text-align: center;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .classes__listing {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+.classes__heading {
+  font-family: 'Special Elite', cursive;
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+.classes__group, .classes__other {
+  text-align: center;
+  align-items: center;
+}
+
+.classes__text__heading {
+  margin: .3em 0em;
 }
 
 .contact {
@@ -144,15 +207,23 @@ html {
   flex-direction: column;
   justify-content: space-around;
   color: #ffffff;
-  background-color: rgb(59, 63, 69);
+  background-color: #646464;
   min-height: 100vh;
 }
 
 .contact__heading {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Special Elite', cursive;
   font-weight: lighter;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+
+.contact__para {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-top: 1em;
 }
 
 .form {
@@ -165,17 +236,17 @@ html {
 }
 
 .form__label--name, .form__label--email, .form__label--message {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  margin: 1em 0em;
 }
 
 .form__input--name, .form__input--email, .form__input--message {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  padding: .7em;
   border: transparent;
   outline: none;
   transition: all .2s ease-in-out;
 }
-
-
 
 .form__input--name:focus, .form__input--email:focus, .form__input--message:focus {
   box-shadow: 0 0 0.7em 0.7em rgba(34, 128, 191, 0.7);
@@ -201,27 +272,23 @@ html {
 
 .form__btn {
   height: 2em;
-  width: 50%;
-  margin: 0 auto;
   border-radius: .25em;
-  color: #fff;
-  background-color: #2280bf;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  width: 50%;
+  color: rgba(27, 27, 31, 0.9);
+  background-color: #93E5E3;
   border-style: none;
-  font-size: 1.2em;
+  font-size: 1.5em;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
-.form__btn:focus {
-  box-shadow: 0 0 0.7em 0.7em rgba(34, 128, 191, 0.5);
-  border: transparent;
-  outline: none;
-}
-
-@media screen and (min-width: 48em) {
-  .form__btn:focus  {
-    box-shadow: 0 0 1em 1em rgba(34, 128, 191, 0.5);
-  }
+.form__btn:hover, .form__btn:focus {
+     background-color: #C7D528;
+     text-decoration:none;
+     cursor:pointer;
 }
 
 footer {
@@ -236,37 +303,7 @@ footer {
 }
 
 .page-footer__text {
-  font-size: 1.3em;
+  font-size: 1em;
+  margin-right: 1em;
   text-align: center;
-}
-
-/*BACK BUTTON */
-.back-to-top-btn {
-  position: fixed;
-	display: block;
-  opacity: 0.6;
-	width: 50px;
-	height: 50px;
-	text-indent: -9999px;
-	z-index: 999;
-	right: 5px;
-	bottom: 5px;
-  background-color: #bfbfbf;
-  background-image: url('../../../images/graphics/up-arrow.png');
-  background-repeat: no-repeat;
-  background-position: center;
-	border-radius: 30px;
-  transition: opacity 1s ease, background 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.back-to-top-btn:hover {
-	background-color: #707070;
-}
-
-@media screen and (min-width: 48em) {
-  .back-to-top-btn  {
-    right: 20px;
-    bottom: 8px;
-  }
 }

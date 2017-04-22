@@ -1,12 +1,10 @@
 // Find elements in DOM
 var linksDOM = document.querySelectorAll('.js-nav-link');
 
-
 // Smooth scroll settings
 var scrollDuration = 600;
 var numberOfScrolls = 60;
 var singleScrollDuration = scrollDuration / numberOfScrolls;
-
 
 // Smooth scroll function
 function smoothScrollTo(elementScrolled, targetElementPosition, scrollDuration) {
@@ -21,7 +19,6 @@ function smoothScrollTo(elementScrolled, targetElementPosition, scrollDuration) 
   }, 10);
 }
 
-
 // Add event listeners
 linksDOM.forEach(function(link) {
   link.addEventListener('click', function(event) {
@@ -32,14 +29,9 @@ linksDOM.forEach(function(link) {
   });
 });
 
-
-
-
-
 // Back to top scroll
 var amountScrolledThreshold = 1000;
 var backToTopButton = document.querySelector('.back-to-top-btn');
-
 
 // Show or hide 'back to top' button
 window.addEventListener('scroll', function(event) {
@@ -49,7 +41,6 @@ window.addEventListener('scroll', function(event) {
     backToTopButton.style.opacity = '0';
   }
 })
-
 
 // Scroll to target
 backToTopButton.addEventListener('click', function(event) {
