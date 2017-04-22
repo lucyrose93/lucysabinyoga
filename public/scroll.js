@@ -1,3 +1,6 @@
+//Check if browser is firefox (smooth scroll doesn't work)
+if(navigator.userAgent.toLowerCase().indexOf('firefox') < -1){
+
 // Find elements in DOM
 var linksDOM = document.querySelectorAll('.js-nav-link');
 
@@ -31,3 +34,5 @@ linksDOM.forEach(function(link) {
 
 // Back to top scroll
 var amountScrolledThreshold = 1000;
+
+}
