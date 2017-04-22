@@ -1,5 +1,8 @@
-//Check if browser is firefox (smooth scroll doesn't work)
-if(navigator.userAgent.toLowerCase().indexOf('firefox') < -1){
+//Check if browser is firefox
+if (typeof InstallTrigger !== 'undefined') {
+  console.log('Firefox does not allow for smooth scroll');
+}
+else {
 
 // Find elements in DOM
 var linksDOM = document.querySelectorAll('.js-nav-link');
