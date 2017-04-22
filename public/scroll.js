@@ -31,19 +31,3 @@ linksDOM.forEach(function(link) {
 
 // Back to top scroll
 var amountScrolledThreshold = 1000;
-var backToTopButton = document.querySelector('.back-to-top-btn');
-
-// Show or hide 'back to top' button
-window.addEventListener('scroll', function(event) {
-  if (window.scrollY > amountScrolledThreshold) {
-    backToTopButton.style.opacity = '0.6';
-  } else {
-    backToTopButton.style.opacity = '0';
-  }
-})
-
-// Scroll to target
-backToTopButton.addEventListener('click', function(event) {
-  event.preventDefault();
-  smoothScrollTo(document.body, 0, scrollDuration);
-});
