@@ -2,8 +2,8 @@
 var linksDOM = document.querySelectorAll('.js-nav-link');
 
 // Smooth scroll settings
-var scrollDuration = 600;
-var numberOfScrolls = 110;
+var scrollDuration = 1000;
+var numberOfScrolls = 100;
 var singleScrollDuration = scrollDuration / numberOfScrolls;
 
 // Smooth scroll function
