@@ -62,14 +62,29 @@ a:hover {
    .nav {
      flex-direction: column;
      height: 12em;
+     overflow: hidden;
   }
-  .nav__link {
+  .nav__link a {
     display: inline-flex;
     align-items: center;
+    font-size: 1.2em;
+    padding: 0.3em;
+  }
+  .nav__logo img {
+    margin: 0;
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 40em){
+  .nav {
+    height: 9.5em;
+  }
+  .nav__link a {
     font-size: .8em;
   }
-  .nav__list {
-    margin: 0;
+  .nav__logo img {
+    margin-top: .3em;
   }
 }
 
@@ -225,7 +240,7 @@ a:hover {
 
 @media screen and (max-width: 70em) {
   .contact__para {
-    margin: 0 1em; 
+    margin: 0 1em;
   }
 }
 
