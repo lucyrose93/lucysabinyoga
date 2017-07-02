@@ -22,6 +22,7 @@ a:hover {
 }
 
 .nav {
+  height: 6em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,8 +31,8 @@ a:hover {
 }
 
 .nav__logo img {
-  height: 7em;
-  margin: 1em;
+  height: 5em;
+  margin: .5em;
 }
 
 .nav__link {
@@ -39,7 +40,7 @@ a:hover {
 }
 
 .nav__list {
-  margin-right: 1em;
+  margin-right: .5em;
 }
 
 /*CHANGE HOVER */
@@ -49,7 +50,7 @@ a:hover {
   padding: .625em;
   text-decoration: none;
   font-family: 'Special Elite', cursive;
-  font-size: 1.5em;
+  font-size: 1.2em;
   transition: all 0.2s ease-in-out;
 }
 
@@ -75,6 +76,10 @@ a:hover {
 }
 
 @media screen and (max-width: 40em){
+
+  .nav {
+    height: 8em;
+  }
   .nav__link a {
     font-size: .8em;
   }
@@ -105,9 +110,10 @@ a:hover {
 }
 
 .home__heading {
-  font-size: 2.5em;
+  font-size: 4em;
   font-weight: lighter;
   font-family: 'Special Elite', cursive;
+  color: #fc0071;
 }
 
 .home__header:hover, .home__header:focus{
@@ -323,4 +329,8 @@ footer {
   font-size: 1em;
   margin-right: 1em;
   text-align: center;
+}
+
+.pinkify {
+  color: #fc0071;
 }
