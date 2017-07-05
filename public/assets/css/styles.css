@@ -62,6 +62,7 @@ a:hover {
    .nav {
      flex-direction: column;
      overflow: hidden;
+     height: 10em;
   }
   .nav__link a {
     display: inline-flex;
@@ -309,7 +310,7 @@ a:hover {
 }
 
 .form__btn:hover, .form__btn:focus {
-     background-color: #C7D528;
+     background-color: #fc0071;
      text-decoration:none;
      cursor:pointer;
 }
@@ -319,15 +320,44 @@ footer {
   justify-content: center;
   font-style: italic;
   align-items: center;
-  background-color: rgba(27, 27, 31, 0.9);
   color: #ccc;
   min-height: 6em;
   width: 100%;
 }
 
+.page-footer__main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__badges {
+  background: white;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.badge {
+  height: 6em;
+}
+
+.eyp, .ryt {
+  height: 9em;
+}
+
+@media screen and (max-width: 70em) {
+  .page-footer__badges {
+    flex-direction: column;
+  }
+  .badge {
+    margin: 1em;
+  }
+}
+
 .page-footer__text {
-  font-size: 1em;
-  margin-right: 1em;
+  font-size: 1.2em;
+  margin: .5em;
   text-align: center;
 }
 
