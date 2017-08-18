@@ -140,12 +140,12 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
   min-height: 100vh;
   padding: 0em 4em;
 }
 
 .about__heading {
+  text-align: center;
   font-size: 2.5em;
   padding-top: 1em;
   font-weight: lighter;
@@ -165,7 +165,7 @@ a:hover {
   margin: 1em 3em;
   font-size: 1.2em;
   line-height: 1.5em;
-  text-align: center;
+  max-width: 800px;
 }
 
 @media screen and (max-width: 70em) {
@@ -178,7 +178,6 @@ a:hover {
   }
   .about__bio {
     margin: 1em 0em;
-    text-align: left;
   }
 }
 
@@ -204,6 +203,10 @@ a:hover {
   font-size: 1.5em;
 }
 
+.old__listing {
+  opacity: .4;
+}
+
 .classes__heading {
   font-family: 'Special Elite', cursive;
   font-size: 2.5em;
@@ -222,7 +225,8 @@ a:hover {
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   background-color: #646464;
   min-height: 100vh;
@@ -238,25 +242,23 @@ a:hover {
 }
 
 .contact__para {
-  text-align: center;
   font-size: 1.5em;
   line-height: 1.5em;
-  margin-top: 1em;
+}
+
+.contact__para, .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 85%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 70em) {
   .contact__para {
     margin: 0 1em;
   }
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 85%;
-  max-width: 60em;
-  margin: 0 auto;
 }
 
 .form__label--name, .form__label--email, .form__label--message {
