@@ -141,7 +141,7 @@ a:hover {
 .contact__button {
   background-color: #fc0071;
   color: white;
-  box-shadow: .2em .2em #696969;
+  box-shadow: .2em .2em #030716;
   border-radius: .3em;
   padding: 1em;
 }
@@ -246,6 +246,11 @@ a:hover {
 
 .classes__text__heading {
   margin: .3em 0em;
+}
+
+.contact__link {
+  text-decoration: underline;
+  font-weight: lighter;
 }
 
 .contact {
