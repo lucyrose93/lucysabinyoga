@@ -138,11 +138,25 @@ a:hover {
   }
 }
 
+.testimonials {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  font-size: 1.2em;
+}
+
+.testimonial {
+  margin: 1em;
+  padding: 1em;
+  background-color: white;
+  opacity: .7;
+}
+
 .contact__button {
   background-color: #fc0071;
   color: white;
-  box-shadow: .2em .2em #030716;
-  border-radius: .3em;
+  font-size: 1.2em;
   padding: 1em;
 }
 
