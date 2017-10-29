@@ -54,7 +54,11 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.nav__link a:hover, .nav__link a:focus  {
+#nav__contact {
+  color: #fc0071;
+}
+
+.nav__link a:hover, .nav__link a:focus, #nav__contact:hover, #nav__contact:focus  {
   color: #93E5E3;
 }
 
@@ -93,6 +97,7 @@ a:hover {
   background-image: url("../images/cover.jpg");
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 90vh;
@@ -114,7 +119,7 @@ a:hover {
   font-size: 4em;
   font-weight: lighter;
   font-family: 'Special Elite', cursive;
-  color: #fc0071;
+  color: #7ce9e6;
 }
 
 .home__header:hover, .home__header:focus{
@@ -133,6 +138,35 @@ a:hover {
   }
 }
 
+.testimonials {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  font-size: 1.2em;
+}
+
+.testimonial {
+  margin: 1em;
+  padding: 1em;
+  background-color: white;
+  opacity: .7;
+}
+
+.contact__button {
+  background-color: #fc0071;
+  color: white;
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+.contact__button__div {
+  display: flex;
+  margin: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
 .about {
   background-color: rgba(27, 27, 31, 0.9);
   color: #ffffff;
@@ -144,10 +178,15 @@ a:hover {
   padding: 0em 4em;
 }
 
+.about__text {
+  margin: 1em 3em;
+  max-width: 500px;
+  text-align: justify;
+}
+
 .about__heading {
   text-align: center;
   font-size: 2.5em;
-  padding-top: 1em;
   font-weight: lighter;
   color: #C7D528;
   font-family: 'Special Elite', cursive;
@@ -162,10 +201,9 @@ a:hover {
 }
 
 .about__bio {
-  margin: 1em 3em;
   font-size: 1.2em;
   line-height: 1.5em;
-  max-width: 800px;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 70em) {
@@ -183,7 +221,9 @@ a:hover {
 
 .classes {
   min-height: 100vh;
-  padding-top: 3em;
+  padding-top: 1em;
+  background-image: url("../images/blackboard.jpeg");
+  color: white;
 }
 
 .classes__text {
@@ -220,6 +260,11 @@ a:hover {
 
 .classes__text__heading {
   margin: .3em 0em;
+}
+
+.contact__link {
+  text-decoration: underline;
+  font-weight: lighter;
 }
 
 .contact {

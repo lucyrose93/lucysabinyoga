@@ -18,12 +18,12 @@
 
   <header role="banner">
     <nav role="navigation" class="nav">
-      <div class="nav__logo"><img src="./public/assets/images/logo.jpg" alt="Lucy Rose Yoga logo"></div>
+      <div class="nav__logo"><a href="./index.html"><img src="./public/assets/images/logo.jpg" alt="Lucy Rose Yoga logo"></a></div>
       <ul class="nav__list">
         <li class="nav__link"><a href="./index.html">home</a></li>
         <li class="nav__link"><a href="./about.html">about</a></li>
         <li class="nav__link"><a href="./classes.html">classes</a></li>
-        <li class="nav__link"><a href="./contact.html" id="nav__contact">contact</a></li>
+        <li class="nav__link"><a href="./contact.html">contact</a></li>
         <li class="nav__link"><a href="https://www.facebook.com/LucyRoseYoga" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
       </ul>
     </nav>
@@ -32,30 +32,55 @@
 
   <main role="main" class="main">
 
-  <a href="./about.html">
-    <article role="article" class="home" id="home">
-      <header class="home__header" tabindex="0"><h1 class="home__heading">LucyRoseYoga</br>
-        <h2>Down to earth yoga in East London</h2></h1>
+    <section class="contact" id="contact">
+      <header class="contact__header">
+        <h2 class="contact__heading">Contact Lucy</h2>
       </header>
-    </a>
+      <p class="contact__para">
+      If you are interested in doing some yoga with me, or engaging my services, please get in touch using the form below. I shall aim to respond by the next working day. Namaste!</p>
+      <form
+        role="form"
+        class="form"
+        action="https://formspree.io/lucy.rose.sabin@gmail.com"
+        method="post"
+      >
+        <label class="form__label--name" for="formName">Name</label>
+        <input
+          class="form__input--name"
+          id="formName" name="name"
+          placeholder="Your name"
+          required
+          autocomplete="name"
+        />
 
-    <section class="testimonials">
-      <div>
-        <p class="testimonial">"Lucy has a relaxed and approachable style to her teaching and has helped me in my recovery from a shoulder injury, helping me to regain strength and flexibility." Sarah B.</p>
-      </div>
-      <div>
-        <p class="testimonial">"My lessons with Lucy are centred around me, and what I want to achieve that week. This not only makes the lesson more interesting; it is also more enjoyable." Jan Hills.</p>
-      </div>
-      <div>
-        <p class="testimonial">"Lucy is very positive which encourages me to go that little bit further in my stretch."</p>
-      </div>
+        <label class="form__label--email" for="formEmail">Email</label>
+        <input
+          class="form__input--email"
+          type="text"
+          id="formEmail"
+          name="_replyto"
+          placeholder="Your email address"
+          required
+          autocomplete="email"
+        />
+
+        <label class="form__label--message" for="formMessage">Message</label>
+        <textarea
+          class="form__input--message"
+          id="formMessage"
+          name="message"
+          placeholder="Your message"
+          required></textarea>
+
+        <button class="form__btn" type="submit">Submit</button>
+
+        <!--customise formspree-->
+        <input type="hidden" name="_next" value="/index.html"/>
+        <input type="hidden" name="_subject" value="Yoga website enquiry" />
+        <input type="hidden" name="_format" value="plain" />
+
+      </form>
     </section>
-
-    <a href="./contact.html" class="contact__button">
-      Get in touch
-    </a>
-
-    </article>
 
   </main>
 
