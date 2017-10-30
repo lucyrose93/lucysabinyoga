@@ -153,11 +153,18 @@ a:hover {
   opacity: .7;
 }
 
+@media screen and (max-width: 70em) {
+  .testimonials {
+    flex-direction: column;
+  }
+}
+
 .contact__button {
   background-color: #fc0071;
   color: white;
   font-size: 1.2em;
   padding: 1em;
+  margin-bottom: 2em;
 }
 
 .contact__button__div {
@@ -209,7 +216,7 @@ a:hover {
 @media screen and (max-width: 70em) {
   .about {
     flex-direction: column;
-    padding: 2em 2em;
+    padding: 2em 0em;
   }
   .about__heading {
     padding-top: .5em;
