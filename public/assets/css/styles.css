@@ -229,7 +229,7 @@ a:hover {
 .classes {
   min-height: 100vh;
   padding-top: 1em;
-  background-image: url("../images/blackboard.jpeg");
+  background: silver;
   color: white;
 }
 
@@ -418,4 +418,10 @@ footer {
 
 .pinkify {
   color: #fc0071;
+}
+
+#contact-redirect {
+  height: 100vh;
+  padding-top: 2em;
+  background: silver;
 }
