@@ -35,8 +35,24 @@ a:hover {
   margin: .5em;
 }
 
+#menu-icon {
+  height: 4em;
+}
+
+@media screen and (min-width: 70em) {
+  #menu-icon {
+  display: none;
+  }
+}
+
 .nav__link {
   display: inline;
+}
+
+@media screen and (max-width: 70em) {
+  .nav__link {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -64,18 +80,17 @@ a:hover {
 
 @media screen and (max-width: 70em) {
    .nav {
-     flex-direction: column;
+     flex-direction: row;
      overflow: hidden;
      height: 10em;
   }
   .nav__link a {
     display: inline-flex;
-    align-items: center;
     font-size: 1.5em;
     padding: 0.3em;
   }
   .nav__logo img {
-    margin: 0;
+    margin-left: .5em;
     margin-top: 1em;
   }
 }
