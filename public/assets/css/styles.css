@@ -110,32 +110,26 @@ a:hover {
 }
 
 .home {
-  background-image: url("../images/cover.jpg");
+  background-image: url("../images/mountain.png");
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
+  min-height: 100vh;
 }
+
+@media screen and (max-width: 40em){
+  .home {
+    background-image: url("../images/mountain-mobile.png")
+  }
+}
+
 
 .home__header {
-  color: #ffffff;
-  background-color: rgba(100,100,100,0.5);
   text-align: center;
   margin: 0 auto;
-  padding: 1em;
+  padding-top: 3em;
   border-radius: .3em;
   transition: all 1s ease-in-out;
-  border: .2em solid #C7D528;
-
-}
-
-.home__heading {
-  font-size: 4em;
-  font-weight: lighter;
-  font-family: 'Special Elite', cursive;
-  color: #7ce9e6;
+  max-width: 90%;
+  color: #292929;
 }
 
 .home__header:hover, .home__header:focus{
@@ -143,12 +137,6 @@ a:hover {
 }
 
 @media screen and (max-width: 70em) {
-  .home {
-    min-height: 90vh;
-  }
-  .home__header {
-    margin: 2em;
-  }
   .home__heading {
     font-size: 1.5em;
   }
@@ -160,11 +148,17 @@ a:hover {
   flex-direction: row;
   width: 90%;
   font-size: 1.2em;
+  margin: 0 auto;
+}
+
+.testimonials__heading {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .testimonial {
   margin: 1em;
-  padding: 1em;
   background-color: white;
   opacity: .7;
 }
@@ -245,7 +239,7 @@ a:hover {
 .classes {
   min-height: 100vh;
   padding-top: 1em;
-  background: silver;
+  background-color: rgba(27, 27, 31, 0.9);
   color: white;
 }
 
@@ -296,7 +290,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  background-color: #646464;
+  background-color: rgba(27, 27, 31, 0.9);
   min-height: 100vh;
 }
 
@@ -344,7 +338,7 @@ a:hover {
 }
 
 .form__input--name:focus, .form__input--email:focus, .form__input--message:focus {
-  box-shadow: 0 0 0.7em 0.7em rgba(34, 128, 191, 0.7);
+  box-shadow: 0 0 0.7em 0.7em #93E5E3;
   border-color: rgba(34, 128, 191);
 }
 
@@ -396,25 +390,18 @@ footer {
   width: 100%;
 }
 
-.page-footer__main {
+.partner-logos {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-}
-
-.page-footer__badges {
-  background: white;
-  justify-content: space-between;
-  padding: 1em;
+  width: 100%;
 }
 
 .badge {
-  height: 6em;
-}
-
-.eyp, .ryt {
-  height: 9em;
+  height: 5em;
+  margin: .5em;
 }
 
 @media screen and (max-width: 70em) {
@@ -439,7 +426,8 @@ footer {
 #contact-redirect {
   height: 100vh;
   padding-top: 2em;
-  background: silver;
+  background: rgba(27, 27, 31, 0.9);
+  color: white;
 }
 #close-icon {
   height: 3em;
