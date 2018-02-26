@@ -110,14 +110,14 @@ a:hover {
 }
 
 .home {
-  background-image: url("../images/mountain.png");
+  background-image: url("../images/mountain.jpg");
   background-size: cover;
   min-height: 100vh;
 }
 
 @media screen and (max-width: 40em){
   .home {
-    background-image: url("../images/mountain-mobile.png")
+    background-image: url("../images/mountain-mobile.jpg")
   }
 }
 
