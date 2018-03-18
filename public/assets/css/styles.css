@@ -11,18 +11,18 @@ html {
 
 /*remove default link styling */
 a {
-    color: #93E5E3;
+    color: #A9A9A9;
     text-decoration: none;
 }
 
 a:hover {
-     color: #C7D528;
+     color: #ff0069;
      text-decoration:none;
      cursor:pointer;
 }
 
 .nav {
-  height: 6em;
+  height: 7em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,8 +31,8 @@ a:hover {
 }
 
 .nav__logo img {
-  height: 5em;
-  margin: .5em;
+  height: 6em;
+  margin: 1em;
 }
 
 #menu-icon {
@@ -66,17 +66,16 @@ a:hover {
   color: #292929;
   padding: .625em;
   text-decoration: none;
-  font-family: 'Special Elite', cursive;
   font-size: 1.2em;
   transition: all 0.2s ease-in-out;
 }
 
 #nav__contact {
-  color: #fc0071;
+  color: #ff0069;
 }
 
 .nav__link a:hover, .nav__link a:focus, #nav__contact:hover, #nav__contact:focus  {
-  color: #93E5E3;
+  color: pink;
 }
 
 @media screen and (max-width: 70em) {
@@ -110,26 +109,27 @@ a:hover {
 }
 
 .home {
-  background-image: url("../images/mountain.jpg");
+  background-image: url("../images/dead-footballers.jpg");
   background-size: cover;
   min-height: 100vh;
 }
 
 @media screen and (max-width: 40em){
   .home {
-    background-image: url("../images/mountain-mobile.jpg")
+    background-image: url("../images/dead-footballers-mobile.jpg")
   }
 }
 
 
 .home__header {
   text-align: center;
+  line-height: 1.2;
   margin: 0 auto;
   padding-top: 3em;
   border-radius: .3em;
   transition: all 1s ease-in-out;
   max-width: 90%;
-  color: #292929;
+  color: white;
 }
 
 .home__header:hover, .home__header:focus{
@@ -170,11 +170,12 @@ a:hover {
 }
 
 .contact__button {
-  background-color: #fc0071;
+  background-color: #ff0069;
   color: white;
   font-size: 1.2em;
   padding: 1em;
   margin-bottom: 2em;
+  border-radius: .5em;
 }
 
 .contact__button__div {
@@ -205,8 +206,7 @@ a:hover {
   text-align: center;
   font-size: 2.5em;
   font-weight: lighter;
-  color: #C7D528;
-  font-family: 'Special Elite', cursive;
+  color: white;
 }
 
 .about__image {
@@ -214,7 +214,7 @@ a:hover {
   border-radius: 50%;
   width: 50%;
   height: auto;
-  border: .2em solid #93E5E3;
+  border: .2em solid white;
 }
 
 .about__bio {
@@ -265,7 +265,6 @@ a:hover {
 }
 
 .classes__heading {
-  font-family: 'Special Elite', cursive;
   font-size: 2.5em;
   font-weight: lighter;
 }
@@ -282,6 +281,12 @@ a:hover {
 .contact__link {
   text-decoration: underline;
   font-weight: lighter;
+  color: #ff0069;
+}
+
+.contact__link:hover {
+  color: pink;
+  text-decoration: underline;
 }
 
 .contact {
@@ -295,7 +300,6 @@ a:hover {
 }
 
 .contact__heading {
-  font-family: 'Special Elite', cursive;
   font-weight: lighter;
   text-align: center;
   font-size: 2.5em;
@@ -338,7 +342,7 @@ a:hover {
 }
 
 .form__input--name:focus, .form__input--email:focus, .form__input--message:focus {
-  box-shadow: 0 0 0.7em 0.7em #93E5E3;
+  box-shadow: 0 0 0.7em 0.7em #ff0069;
   border-color: rgba(34, 128, 191);
 }
 
@@ -366,16 +370,17 @@ a:hover {
   margin-top: 1em;
   margin-bottom: 3em;
   width: 50%;
-  color: rgba(27, 27, 31, 0.9);
-  background-color: #93E5E3;
+  color: white;
+  background-color: #ff0069;
   border-style: none;
   font-size: 1.5em;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
-.form__btn:hover, .form__btn:focus {
-     background-color: #fc0071;
+.form__btn:hover, .form__btn:focus, .contact__button:hover {
+     background-color: pink;
+     color: white;
      text-decoration:none;
      cursor:pointer;
 }
@@ -419,8 +424,8 @@ footer {
   text-align: center;
 }
 
-.pinkify {
-  color: #fc0071;
+.brighten {
+  color: #ff0069;
 }
 
 #contact-redirect {
