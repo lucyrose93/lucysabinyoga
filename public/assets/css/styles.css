@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-     color: #ff0069;
+     color: #f55f51;
      text-decoration:none;
      cursor:pointer;
 }
@@ -71,11 +71,11 @@ a:hover {
 }
 
 #nav__contact {
-  color: #ff0069;
+  color: #f55f51;
 }
 
 .nav__link a:hover, .nav__link a:focus, #nav__contact:hover, #nav__contact:focus  {
-  color: pink;
+  opacity: .5;
 }
 
 @media screen and (max-width: 70em) {
@@ -109,14 +109,14 @@ a:hover {
 }
 
 .home {
-  background-image: url("../images/dead-footballers.jpg");
+  background-image: url("../images/website-cover.jpg");
   background-size: cover;
   min-height: 100vh;
 }
 
 @media screen and (max-width: 40em){
   .home {
-    background-image: url("../images/dead-footballers-mobile.jpg")
+    background-image: url("../images/website-cover-mobile.jpg")
   }
 }
 
@@ -125,15 +125,15 @@ a:hover {
   text-align: center;
   line-height: 1.2;
   margin: 0 auto;
-  padding-top: 3em;
-  border-radius: .3em;
-  transition: all 1s ease-in-out;
-  max-width: 90%;
+  padding: .5em;
+  /* transition: all 1s ease-in-out; */
+  background-color: black;
+  opacity: .5;
   color: white;
 }
 
 .home__header:hover, .home__header:focus{
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 @media screen and (max-width: 70em) {
@@ -170,7 +170,7 @@ a:hover {
 }
 
 .contact__button {
-  background-color: #ff0069;
+  background-color: #f55f51;
   color: white;
   font-size: 1.2em;
   padding: 1em;
@@ -218,7 +218,7 @@ a:hover {
 }
 
 .about__bio {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5em;
   margin-top: 1em;
 }
@@ -281,11 +281,11 @@ a:hover {
 .contact__link {
   text-decoration: underline;
   font-weight: lighter;
-  color: #ff0069;
+  color: #f55f51;
 }
 
 .contact__link:hover {
-  color: pink;
+  opacity: .5;
   text-decoration: underline;
 }
 
@@ -342,7 +342,7 @@ a:hover {
 }
 
 .form__input--name:focus, .form__input--email:focus, .form__input--message:focus {
-  box-shadow: 0 0 0.7em 0.7em #ff0069;
+  box-shadow: 0 0 0.7em 0.7em #f55f51;
   border-color: rgba(34, 128, 191);
 }
 
@@ -371,7 +371,7 @@ a:hover {
   margin-bottom: 3em;
   width: 50%;
   color: white;
-  background-color: #ff0069;
+  background-color: #f55f51;
   border-style: none;
   font-size: 1.5em;
   cursor: pointer;
@@ -379,7 +379,7 @@ a:hover {
 }
 
 .form__btn:hover, .form__btn:focus, .contact__button:hover {
-     background-color: pink;
+     opacity: .5;
      color: white;
      text-decoration:none;
      cursor:pointer;
@@ -425,7 +425,7 @@ footer {
 }
 
 .brighten {
-  color: #ff0069;
+  color: #f55f51;
 }
 
 #contact-redirect {
