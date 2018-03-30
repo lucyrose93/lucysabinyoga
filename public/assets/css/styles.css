@@ -136,6 +136,10 @@ a:hover {
   transform: scale(1.1);
 }
 
+#home__disclaimer {
+  font-size: .7em;
+}
+
 @media screen and (max-width: 70em) {
   .home__heading {
     font-size: 1.5em;
