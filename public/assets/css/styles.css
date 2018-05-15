@@ -197,8 +197,8 @@ a:hover {
 }
 
 .about__text {
-  margin: 1em 3em;
-  max-width: 500px;
+  margin: 3em 3em;
+  max-width: 630px;
   text-align: justify;
 }
 
