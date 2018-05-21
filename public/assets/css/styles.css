@@ -189,7 +189,7 @@ a:hover {
   background-color: rgba(27, 27, 31, 0.9);
   color: #ffffff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
