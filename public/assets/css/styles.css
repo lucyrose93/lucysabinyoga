@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 
 html {
@@ -28,15 +28,15 @@ a:hover {
 
 .page__heading {
   font-size: 2em;
-  font-family: 'Luna', 'Gochi Hand', 'Montserrat', 'Open Sans', sans-serif;
+  font-family: 'Luna', 'Gloria Hallelujah', 'Montserrat', 'Open Sans', sans-serif;
   color: #009966;
   text-align: center;
-  margin: 1.5em auto;
+  margin: 2em auto;
 }
 
 @media screen and (max-width: 70em) {
   .page__heading {
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
