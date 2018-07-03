@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 html {
   box-sizing: border-box;
 }
 
 * {
   box-sizing: inherit;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #363843;
   margin: 0;
   padding: 0;
@@ -24,7 +26,7 @@ a:hover {
 
 .page__heading {
   font-size: 2em;
-  font-family: luna, Montserrat, sans-serif;
+  font-family: 'Luna', 'Montserrat', 'Open Sans', sans-serif;
   color: #009966;
   text-align: center;
   margin: 1.5em auto;
