@@ -39,7 +39,7 @@ a:hover {
   font-family: 'Luna', 'Gloria Hallelujah', 'Montserrat', 'Open Sans', sans-serif;
   color: #009966;
   text-align: center;
-  margin: 2em auto;
+  margin: .5em auto;
 }
 
 @media screen and (max-width: 70em) {
@@ -223,7 +223,7 @@ a:hover {
 }
 
 .about__image {
-  margin: 1em auto;
+  margin: 0em auto;
   border-radius: 50%;
   width: 50%;
   height: auto;
