@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
-
+@font-face {
+  font-family: 'Luna';
+  src: url('../fonts/luna.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/luna.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/luna.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/luna.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/luna.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/luna.svg#svgLuna') format('svg'); /* Legacy iOS */
+}
 
 html {
   box-sizing: border-box;
@@ -61,7 +69,7 @@ a:hover {
 }
 
 #menu-icon {
-  height: 4em;
+  height: 2.5em;
   margin-right: .5em;
 }
 
@@ -134,14 +142,16 @@ a:hover {
 }
 
 .home {
-  background-image: url("../images/website-cover.jpg");
+  background-image: url("../images/website-cover.png");
+  background-color: #ffede0;
   background-size: cover;
   min-height: 100vh;
 }
 
 @media screen and (max-width: 40em){
   .home {
-    background-image: url("../images/website-cover-mobile.jpg")
+    background-image: url("../images/website-cover-mobile.png");
+    background-color: #ffede0;
   }
 }
 
@@ -162,6 +172,10 @@ a:hover {
 .testimonial {
   margin: 1em;
   color: white;
+}
+
+#yogacampus-logo {
+  max-width: 50%;
 }
 
 @media screen and (max-width: 70em) {
@@ -213,7 +227,7 @@ a:hover {
   border-radius: 50%;
   width: 50%;
   height: auto;
-  border: .2em solid white;
+  /* border: .4em solid #363843; */
 }
 
 .about__bio {
@@ -285,8 +299,6 @@ a:hover {
 }
 
 .contact__para {
-  font-size: 1.5em;
-  line-height: 1.5em;
   text-align: center;
 }
 
@@ -362,7 +374,7 @@ a:hover {
 }
 
 .clearspace {
-  height: 5em;
+  height: 6em;
 }
 
 footer {
@@ -417,7 +429,7 @@ page-footer__text {
   padding: 2em;
 }
 #close-icon {
-  height: 3em;
+  height: 2em;
   float: right;
   margin: 0 1em 0 0;
 }
