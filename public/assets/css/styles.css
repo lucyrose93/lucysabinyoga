@@ -169,6 +169,12 @@ a:hover {
   background-color: #009966;
 }
 
+#testimonials {
+  background-color: #ffede0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 .testimonial {
   margin: 1em;
   color: white;
@@ -268,6 +274,10 @@ a:hover {
 
 .classes__listing ul {
   list-style: none;
+}
+
+.old__listing {
+  opacity: .5;
 }
 
 .publications__list {
