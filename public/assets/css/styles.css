@@ -458,3 +458,9 @@ page-footer__text {
 #publications__image {
   max-width: 60%;
 }
+
+#rewild-pic {
+  max-width: 50%;
+  margin: 2em;
+  border-radius: 50%;
+}
