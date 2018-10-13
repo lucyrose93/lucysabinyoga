@@ -55,7 +55,6 @@ a:hover {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
-  background-color: ;
 }
 
 .nav__logo img {
@@ -142,9 +141,9 @@ a:hover {
 }
 
 .home {
-  background-image: url("../images/website-cover.png");
-  background-color: #ffede0;
+  background-image: url("../images/website-cover.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
 }
 
