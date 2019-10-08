@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 @font-face {
-  font-family: 'Luna';
-  src: url('../fonts/luna.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/luna.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/luna.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/luna.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/luna.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/luna.svg#svgLuna') format('svg'); /* Legacy iOS */
+  font-family: 'She Always Walks Alone';
+  src: url(../fonts/shealwayswalksalone.ttf);
 }
 
 html {
   box-sizing: border-box;
+  cursor: url(../images/om.png), auto;
 }
 
 * {
@@ -24,20 +20,29 @@ html {
 
 /*remove default link styling */
 a {
-    color: #009966;
+    color: #f60686;
     text-decoration: none;
 }
 
 a:hover {
      opacity: .5em;
      text-decoration:none;
-     cursor:pointer;
+     cursor: url('../images/eye.png'), auto;
+}
+
+.eye-cursor:hover {
+  cursor: url('../images/eye.png'), auto;
+}
+
+.lips-cursor:hover {
+  cursor: url('../images/lips.png'), auto;
 }
 
 .page__heading {
-  font-size: 2em;
-  font-family: 'Luna', 'Gloria Hallelujah', 'Montserrat', 'Open Sans', sans-serif;
-  color: #009966;
+  font-size: 3em;
+  font-family: 'She Always Walks Alone', 'Gloria Hallelujah', 'Open Sans', sans-serif;
+  color: black;
+  opacity: .8;
   text-align: center;
   margin: .5em auto;
 }
@@ -58,25 +63,25 @@ a:hover {
 }
 
 .nav__logo img {
-  height: 6em;
+  height: 7em;
   margin: 1em;
 }
-
+/*
 #homepage-logo {
   width: 20%;
   margin: auto;
-}
+} */
 
-#menu-icon {
+/* #menu-icon {
   height: 2.5em;
   margin-right: .5em;
-}
-
+} */
+/*
 @media screen and (min-width: 70em) {
   #menu-icon {
   display: none;
   }
-}
+} */
 
 .nav__link {
   display: inline;
@@ -84,6 +89,9 @@ a:hover {
 
 @media screen and (max-width: 70em) {
   .nav__link {
+    display: none;
+  }
+  #reviews {
     display: none;
   }
 }
@@ -102,12 +110,39 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 
+nav a:hover, nav a:focus, #nav__contact:hover, #nav__contact:focus  {
+  opacity: .5;
+  cursor: url('../images/lotus-position.png'), auto;
+}
+
+#nav__about:hover {
+  cursor: url('../images/chair.png'), auto;
+}
+
+#nav__classes:hover {
+  cursor: url('../images/vajra.png'), auto;
+}
+
+#nav__articles:hover {
+  cursor: url('../images/cobra.png'), auto;
+}
+
+#nav__reviews:hover {
+  cursor: url('../images/bow.png'), auto;
+}
+
+#nav__contact:hover {
+  cursor: url('../images/shoulder-stand.png'), auto;
+}
+
 #nav__contact {
   color: #cc3366;
 }
 
-.nav__link a:hover, .nav__link a:focus, #nav__contact:hover, #nav__contact:focus  {
-  opacity: .5;
+#nav__insta__logo {
+  width: 1.2em;
+  height: auto;
+  vertical-align: sub;
 }
 
 @media screen and (max-width: 70em) {
@@ -140,43 +175,47 @@ a:hover {
   }
 }
 
-.home {
-  background-image: url("../images/website-cover.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+h1 {
+  font-size: 4em;
 }
 
-@media screen and (max-width: 40em){
-  .home {
-    background-image: url("../images/website-cover-mobile.png");
-    background-color: #ffede0;
-  }
+h2 {
+  font-size: 3em;
 }
 
-@media screen and (max-width: 70em) {
-  .home__heading {
-    font-size: 1.5em;
-  }
+h3 {
+  font-size: 2.5em;
 }
 
-.testimonials {
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+.reviews {
   display: flex;
   flex-direction: row;
   width: 90%;
   margin: 0 auto;
-  background-color: #009966;
+  background-color: white;
 }
 
-#testimonials {
-  background-color: #ffede0;
+#reviews {
+  background-color: #d1cff8;
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
-.testimonial {
+.review {
   margin: 1em;
-  color: white;
+  color: black;
 }
 
 #yogacampus-logo {
@@ -184,7 +223,7 @@ a:hover {
 }
 
 @media screen and (max-width: 70em) {
-  .testimonials {
+  .reviews {
     flex-direction: column;
   }
 }
@@ -194,7 +233,7 @@ a:hover {
   color: white;
   font-size: 1.2em;
   padding: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   border-radius: .5em;
 }
 
@@ -205,8 +244,16 @@ a:hover {
   justify-content: center;
 }
 
+.enquiry__button {
+  background-color: #CC3366;
+  color: white;
+  font-size: 1em;
+  padding: .5em;
+  border-radius: .5em;
+}
+
 .about {
-  background-color: #ffede0;
+  background-color: #d1cff8;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -215,27 +262,28 @@ a:hover {
   padding: 0em 4em;
 }
 
-.about__text {
+.article__text {
   margin: 3em 3em;
   max-width: 630px;
   text-align: justify;
 }
 
-.about__heading {
+.article__heading {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: lighter;
 }
 
-.about__image {
-  margin: 0em auto;
+.article__image {
+  margin: 1em auto;
   border-radius: 50%;
-  width: 50%;
+  width: 60%;
+  max-width: 600px;
   height: auto;
   /* border: .4em solid #363843; */
 }
 
-.about__bio {
+.article__bio {
   font-size: 1em;
   line-height: 1.5em;
   margin-top: 1em;
@@ -246,19 +294,29 @@ a:hover {
     flex-direction: column;
     padding: 2em 0em;
   }
-  .about__heading {
+  .article__heading {
     padding-top: .5em;
   }
-  .about__bio {
+  .article__bio {
     margin: 1em 0em;
   }
+  .article__image {
+    width: 80%;
+  }
+}
+
+#classes__section {
+  max-width: 700px;
 }
 
 .classes {
   min-height: 100vh;
   padding-top: 1em;
-  background-color: #ffede0;
-  text-align: center;
+  background-color: white;
+}
+
+.group-classes {
+  text-align: right;
 }
 
 .classes section {
@@ -269,9 +327,10 @@ a:hover {
 
 .classes__listing {
   padding: 1em 0;
+  /* background: white; */
 }
 
-.classes__listing ul {
+.classes ul {
   list-style: none;
 }
 
@@ -279,7 +338,7 @@ a:hover {
   opacity: .5;
 }
 
-.publications__list {
+.articles__list {
   list-style: circle;
   margin-left: 1em;
 }
@@ -295,7 +354,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffede0;
+  background-color: #f5d171;
   min-height: 100vh;
 }
 
@@ -372,18 +431,20 @@ a:hover {
   background-color: #CC3366;
   border-style: none;
   font-size: 1.5em;
-  cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
 .form__btn:hover, .form__btn:focus, .contact__button:hover {
      color: white;
      text-decoration:none;
-     cursor:pointer;
+}
+
+.form__btn:hover, .form__btn:focus {
+    cursor: url('../images/lotus.png'), auto;
 }
 
 .clearspace {
-  height: 6em;
+  height: 2em;
 }
 
 footer {
@@ -415,6 +476,11 @@ page-footer__text {
   margin: .5em;
 }
 
+.page-footer__text {
+  margin: .5em;
+}
+
+
 @media screen and (max-width: 70em) {
   .page-footer__badges {
     flex-direction: column;
@@ -422,11 +488,12 @@ page-footer__text {
   .badge {
     margin: 1em;
   }
-}
-
-.page-footer__text {
-  margin: .5em;
-  text-align: center;
+  .footer__first {
+    text-align: right;
+  }
+  .footer__second {
+    text-align: left;
+  }
 }
 
 .brighten {
@@ -454,12 +521,39 @@ page-footer__text {
   margin: 0 auto;
 }
 
-#publications__image {
-  max-width: 60%;
+#articles {
+  background-color: #f5d171;
+}
+
+.articles__featured {
+  max-width: 50%;
+  padding: 1%;
+  background-color: white;
+}
+
+.articles__featured img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 70em) {
+  .articles__featured {
+    max-width: 90%;
+  }
+}
+
+#featured__label {
+  text-align: right;
 }
 
 #rewild-pic {
   max-width: 50%;
   margin: 2em;
   border-radius: 50%;
+}
+
+#end-line {
+  font-size: 1.5em;
+  margin-bottom: -.7em;
+  background-color: white;
+  padding: 0 1em;
 }
