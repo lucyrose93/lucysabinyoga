@@ -199,6 +199,10 @@ h6 {
   font-size: 1.2em;
 }
 
+details {
+  line-height: 1.8em;
+}
+
 .reviews {
   display: flex;
   flex-direction: row;
@@ -208,7 +212,7 @@ h6 {
 }
 
 #reviews {
-  background-color: #d1cff8;
+  background-color: #FAF8CD;
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -253,7 +257,7 @@ h6 {
 }
 
 .about {
-  background-color: #d1cff8;
+  background-color: #FAF8CD;
   display: flex;
   flex-direction: row;
   align-items: center;
