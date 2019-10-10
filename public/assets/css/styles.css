@@ -50,6 +50,7 @@ a:hover {
 @media screen and (max-width: 70em) {
   .page__heading {
     margin: 1em auto;
+    line-height: 1.6em;
   }
 }
 
@@ -88,9 +89,9 @@ a:hover {
 }
 
 @media screen and (max-width: 70em) {
-  .nav__link {
+  /* .nav__link {
     display: none;
-  }
+  } */
   #reviews {
     display: none;
   }
@@ -117,6 +118,10 @@ nav a:hover, nav a:focus, #nav__contact:hover, #nav__contact:focus  {
 
 #nav__about:hover {
   cursor: url('../images/chair.png'), auto;
+}
+
+#nav__faqs:hover {
+  cursor: url('../images/dancer.png'), auto;
 }
 
 #nav__classes:hover {
@@ -148,6 +153,7 @@ nav a:hover, nav a:focus, #nav__contact:hover, #nav__contact:focus  {
 @media screen and (max-width: 70em) {
    .nav {
      flex-direction: row;
+    
      overflow: hidden;
      height: 10em;
   }
@@ -177,14 +183,17 @@ nav a:hover, nav a:focus, #nav__contact:hover, #nav__contact:focus  {
 
 h1 {
   font-size: 4em;
+  text-align: left;
 }
 
 h2 {
   font-size: 3em;
+  text-align: left;
 }
 
 h3 {
   font-size: 2.5em;
+  text-align: left;
 }
 
 h4 {
@@ -307,6 +316,16 @@ details {
   .article__image {
     width: 80%;
   }
+}
+
+.faqs {
+  background-color: #f5d171;
+}
+
+.faqs__text {
+  margin: 0 auto;
+  width: 60%;
+  max-width: 900px;
 }
 
 #classes__section {
