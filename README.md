@@ -1,2 +1,2 @@
 # LucySabinYoga
-A website for my yoga classes. #noframeworks #vanillacode 
+A website for my yoga classes. 
